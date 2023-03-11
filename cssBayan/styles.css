@@ -13,8 +13,29 @@
 
 .image {
     display: none;
+    margin: 0 auto;
     width: 25rem;
 }
+
+.before, .after {
+    color: black;
+}
+
+/* HOVER OVER ACCORDION */
+
+.indicators {
+    display: none;
+}
+
+#accordion:hover h2{
+    color: blueviolet;
+}
+
+#accordion:hover .indicators{
+    display: inline;
+}
+
+/* HOVER OVER ROW */
 
 .el:hover > .image {
     display: block;
