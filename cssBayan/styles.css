@@ -20,13 +20,9 @@ h2 {
 }
 
 .image {
-    display: none;
-    margin: 1rem auto;
-    width: 25rem;
-}
-
-.before, .after {
-    color: black;
+    display: block;
+    width: 0rem;
+    transition: width 2s;
 }
 
 .flex {
@@ -39,15 +35,8 @@ input {
 }
 
 input:checked ~ .image {
-    display: block;
-}
-
-input:checked + .flex .indicators .before{
-    display: none;
-}
-
-input:checked + .flex .indicators .after{
-    display: inline;
+    margin: 2rem auto 0;
+    width: 25rem;
 }
 
 input:checked + .flex h2 {
@@ -56,24 +45,40 @@ input:checked + .flex h2 {
 
 /* HOVER OVER ACCORDION */
 
-.indicators {
-    display: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
 #accordion:hover h2{
     color: black;
-}
-
-#accordion:hover .indicators{
-    display: inline;
 }
 
 /* HOVER OVER ROW */
 
 .el:hover .image {
+    margin: 2rem auto 0;
+    width: 25rem;
+}
+
+/* STYLING */
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.el {
+    padding: 2rem 0;
+}
+
+/* ICONS */
+
+input:checked + .flex .indicators .before{
+    display: none;
+}
+
+input:checked + .flex .indicators .after{
     display: block;
+}
+
+.indicators {
+    font-size: 0;
+    transition: font-size 0.4s;
 }
 
 .after {
@@ -85,5 +90,9 @@ input:checked + .flex h2 {
 } 
 
 .el:hover .after {
-    display: inline;
+    display: block;
+}
+
+#accordion:hover .indicators{
+    font-size: 1rem;
 }
