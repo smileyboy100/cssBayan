@@ -21,10 +21,17 @@
     color: black;
 }
 
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* HOVER OVER ACCORDION */
 
 .indicators {
     display: none;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 #accordion:hover h2{
