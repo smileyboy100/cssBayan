@@ -12,5 +12,11 @@
 }
 
 .image {
+    display: none;
     width: 25rem;
 }
+
+.el:hover > .image {
+    display: block;
+}
+
