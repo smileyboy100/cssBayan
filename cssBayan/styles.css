@@ -20,3 +20,14 @@
     display: block;
 }
 
+.after {
+    display: none;
+}
+
+.el:hover .before {
+    display: none;
+} 
+
+.el:hover .after {
+    display: inline;
+}
