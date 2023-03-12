@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: inherit;
+}
+
+#accordion {
+    width: 60%;
+    margin: 2rem auto;
+    padding: 2rem 4rem;
+    border: 0.5rem solid black;
+}
+
+hr {
+    color: rgb(243, 243, 243);
+}
+
+h2 {
+    color: rgb(58, 58, 243);
+}
+
+.image {
+    display: block;
+    width: 0rem;
+    transition: width 2s;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    display: none;
+}
+
+input:checked ~ .image {
+    margin: 2rem auto 0;
+    width: 25rem;
+}
+
+input:checked + .flex h2 {
+    color: black;
+}
+
+#accordion:hover h2{
+    color: black;
+}
+
+label:not(:active) {
+    transition: opacity 0.7s;
+}
+
+label:active {
+    opacity: 0.7;
+}
+
+label:active h2 {
+    background-color: lightpink;
+}
+
+.el:hover .image {
+    margin: 2rem auto 0;
+    width: 25rem;
+}
+
+/* STYLING */
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.el {
+    padding: 2rem 0;
+}
+
+/* ICONS */
+
+.icon {
+    transition: transform 0.3s;
+}
+
+.el:hover .icon{
+    transform: rotate(90deg);
+}
+
+input:checked + .flex .indicators .icon {
+    transform: rotate(90deg);
+}
+
+.indicators {
+    font-size: 0;
+    transition: font-size 0.4s;
+}
+
+#accordion:hover .indicators{
+    font-size: 1rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 820px) {
+    body {
+        background-color: azure;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .el:hover .image {
+        margin: 2rem auto 0;
+        width: 17rem;
+    }
+
+    input:checked ~ .image {
+        margin: 2rem auto 0;
+        width: 17rem;
+    }
+
+    #accordion {
+        width: 80%;
+        border: 0.3rem solid black;
+        padding: 2rem 3rem;
+    }
+
+    .flex {
+        font-size: 0.8rem;
+    }
+
+    #accordion:hover .indicators{
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        background-color: wheat;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .el:hover .image {
+        margin: 2rem auto 0;
+        width: 12rem;
+    }
+
+    input:checked ~ .image {
+        margin: 2rem auto 0;
+        width: 12rem;
+    }
+
+    #accordion {
+        width: 90%;
+        border: 0.1rem solid black;
+        padding: 1rem 2rem;
+    }
+
+    .flex {
+        font-size: 0.6rem;
+    }
+
+    #accordion:hover .indicators{
+        font-size: 0.5rem;
+    }
+}
+
+@media (hover: hover) {
+    .el{
+        cursor: pointer;
+    }
+}
