@@ -48,10 +48,6 @@ input:checked + .flex h2 {
     color: black;
 }
 
-#accordion{
-    cursor: pointer;
-}
-
 label:not(:active) {
     transition: opacity 0.7s;
 }
@@ -104,4 +100,76 @@ input:checked + .flex .indicators .after{
 
 #accordion:hover .indicators{
     font-size: 1rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 820px) {
+    body {
+        background-color: azure;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .el:hover .image {
+        margin: 2rem auto 0;
+        width: 17rem;
+    }
+
+    input:checked ~ .image {
+        margin: 2rem auto 0;
+        width: 17rem;
+    }
+
+    #accordion {
+        width: 80%;
+    }
+
+    .flex {
+        font-size: 0.8rem;
+    }
+
+    #accordion:hover .indicators{
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        background-color: wheat;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .el:hover .image {
+        margin: 2rem auto 0;
+        width: 12rem;
+    }
+
+    input:checked ~ .image {
+        margin: 2rem auto 0;
+        width: 12rem;
+    }
+
+    #accordion {
+        width: 90%;
+    }
+
+    .flex {
+        font-size: 0.6rem;
+    }
+
+    #accordion:hover .indicators{
+        font-size: 0.5rem;
+    }
+}
+
+@media (hover: hover) {
+    .el{
+        cursor: pointer;
+    }
 }
