@@ -9,7 +9,7 @@
     width: 60%;
     margin: 2rem auto;
     padding: 2rem 5rem;
-    border: 5px solid black;
+    border: 0.5rem solid black;
 }
 
 hr {
@@ -129,6 +129,7 @@ input:checked + .flex .indicators .after{
 
     #accordion {
         width: 80%;
+        border: 0.3rem solid black
     }
 
     .flex {
@@ -161,6 +162,7 @@ input:checked + .flex .indicators .after{
 
     #accordion {
         width: 90%;
+        border: 0.1rem solid black
     }
 
     .flex {
