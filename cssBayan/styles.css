@@ -77,29 +77,21 @@ h1 {
 
 /* ICONS */
 
-input:checked + .flex .indicators .before{
-    display: none;
+.icon {
+    transition: transform 0.3s;
 }
 
-input:checked + .flex .indicators .after{
-    display: block;
+.el:hover .icon{
+    transform: rotate(90deg);
+}
+
+input:checked + .flex .indicators .icon {
+    transform: rotate(90deg);
 }
 
 .indicators {
     font-size: 0;
     transition: font-size 0.4s;
-}
-
-.after {
-    display: none;
-}
-
-.el:hover .before {
-    display: none;
-} 
-
-.el:hover .after {
-    display: block;
 }
 
 #accordion:hover .indicators{
