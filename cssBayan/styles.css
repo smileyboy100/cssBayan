@@ -8,7 +8,7 @@
 #accordion {
     width: 60%;
     margin: 2rem auto;
-    padding: 2rem 5rem;
+    padding: 2rem 4rem;
     border: 0.5rem solid black;
 }
 
@@ -129,7 +129,8 @@ input:checked + .flex .indicators .after{
 
     #accordion {
         width: 80%;
-        border: 0.3rem solid black
+        border: 0.3rem solid black;
+        padding: 2rem 3rem;
     }
 
     .flex {
@@ -162,7 +163,8 @@ input:checked + .flex .indicators .after{
 
     #accordion {
         width: 90%;
-        border: 0.1rem solid black
+        border: 0.1rem solid black;
+        padding: 1rem 2rem;
     }
 
     .flex {
